@@ -3,3 +3,43 @@
 body{
   font-family: Gilroy, arial, Helvetica Neue, sans-serif;
 }
+
+.slick-prev, .slick-next{
+  border:2px solid black;
+  background-color: blue !important;
+  
+}
+.slick-prev{
+  position: absolute !important;
+  /* left: unset !important; */
+  left: unset !important;
+  right: 118px;
+  top: -30px !important;
+  z-index: 1;
+  border:2px solid black;
+
+  opacity: 0;
+
+}
+.slick-next{
+  position: absolute !important;
+  right: 55px !important;
+  top: -30px !important; 
+  z-index: 1;
+  opacity: 0;
+
+}
+.slick-slider{
+  position: static !important;
+}
+
+
+
+/* In your CSS (e.g., index.css or a global stylesheet) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
